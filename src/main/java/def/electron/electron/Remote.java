@@ -1,8 +1,4 @@
 package def.electron.electron;
-/**
-	 * The remote module provides a simple way to do inter-process communication (IPC)
-	 * between the renderer process (web page) and the main process.
-	 */
 @jsweet.lang.Interface
 public abstract class Remote extends CommonElectron {
     /**
@@ -21,10 +17,5 @@ public abstract class Remote extends CommonElectron {
 		 * @returns The global variable of name (e.g. global[name]) in the main process.
 		 */
     native public Object getGlobal(String name);
-    /**
-		 * Returns the process object in the main process. This is the same as
-		 * remote.getGlobal('process'), but gets cached.
-		 */
-    public def.electron.nodejs.Process process;
 }
 

@@ -1,5 +1,4 @@
 package def.electron.electron;
-import jsweet.util.union.Union3;
 @jsweet.lang.Interface
 public abstract class BrowserWindowOptions extends def.js.Object {
     /**
@@ -145,11 +144,6 @@ public abstract class BrowserWindowOptions extends def.js.Object {
     @jsweet.lang.Optional
     public String title;
     /**
-		 * The window icon, when omitted on Windows the executable’s icon would be used as window icon.
-		 */
-    @jsweet.lang.Optional
-    public jsweet.util.union.Union<NativeImage,String> icon;
-    /**
 		 * Whether window should be shown when created.
 		 * Default: true.
 		 */
@@ -224,29 +218,9 @@ public abstract class BrowserWindowOptions extends def.js.Object {
     @jsweet.lang.Optional
     public Boolean transparent;
     /**
-		 * The type of window, default is normal window.
-		 */
-    @jsweet.lang.Optional
-    public Object type;
-    /**
-		 * The style of window title bar.
-		 */
-    @jsweet.lang.Optional
-    public Union3<def.electron.StringTypes.Default,def.electron.StringTypes.hidden,def.electron.StringTypes.hidden_inset> titleBarStyle;
-    /**
 		 * Use WS_THICKFRAME style for frameless windows on Windows
 		 */
     @jsweet.lang.Optional
     public Boolean thickFrame;
-    /**
-		 * Add a type of vibrancy effect to the window, only on macOS
-		 */
-    @jsweet.lang.Optional
-    public Object vibrancy;
-    /**
-		 * Settings of web page’s features.
-		 */
-    @jsweet.lang.Optional
-    public WebPreferences webPreferences;
 }
 
