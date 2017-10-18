@@ -8,6 +8,7 @@ public class BrowserWindow extends def.js.Object {
     native public Object loadURL(String url);
     native public Object setMenu(Object menu);
     native public void maximize();
+    native public void minimize();
     native public void close();
     native public void show();
     native public void blur();
