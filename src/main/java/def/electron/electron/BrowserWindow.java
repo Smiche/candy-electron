@@ -7,6 +7,14 @@ public class BrowserWindow extends def.js.Object {
     public WebContents webContents;
     native public Object loadURL(String url);
     native public Object setMenu(Object menu);
+    native public void maximize();
+    native public void close();
+    native public void show();
+    native public void blur();
+    native public void restore();
+    native public void center();
+    native public void setKiosk(boolean isKiosk);
+    native public boolean isKiosk();
     public BrowserWindow(){}
 }
 
