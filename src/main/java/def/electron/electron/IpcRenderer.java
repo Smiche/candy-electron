@@ -1,8 +1,8 @@
 package def.electron.electron;
-import def.js.Function;
+
 @jsweet.lang.Interface
 public abstract class IpcRenderer extends def.js.Object {
-    native public Object send(String pipe, Object data);
-    native public Object on(String event, java.util.function.Consumer<Object> listener);
-}
+	public native Object send(String pipe, Object data);
 
+	public native Object on(String event, java.util.function.Consumer<Object> listener);
+}
