@@ -1,6 +1,12 @@
 package def.electron.electron;
 @jsweet.lang.Interface
 public abstract class BrowserWindowOptions extends def.js.Object {
+	
+	/**
+	 * WebPreferences to set security options.
+	 */
+	@jsweet.lang.Optional
+	public WebPreferences webPreferences;
     /**
 		 * Window’s width in pixels.
 		 * Default: 800.

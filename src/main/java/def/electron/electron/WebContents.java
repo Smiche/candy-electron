@@ -15,7 +15,7 @@ public abstract class WebContents extends def.js.Object {
 	public native WebContents on(String event,
 			NewWindowCallback<Event, String, String, Object, BrowserWindowOptions, Object> callback);
 
-	public native Object send(String pipe, def.js.Object data);
+	public native Object send(String pipe, String data);
 
 	public native void printToPDF(PrintOptions options, java.util.function.BiConsumer<?, ?> callback);
 
