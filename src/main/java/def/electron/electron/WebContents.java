@@ -18,6 +18,8 @@ public abstract class WebContents extends def.js.Object {
 	public native Object send(String pipe, String data);
 
 	public native void printToPDF(PrintOptions options, java.util.function.BiConsumer<?, ?> callback);
+	
+	public native void executeJavaScript(String code);
 
 	public native void print();
 
