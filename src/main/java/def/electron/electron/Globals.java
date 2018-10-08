@@ -4,5 +4,6 @@ public final class Globals {
     public static BrowserWindow browserWindow;
     public static IpcMain ipcMain;
     public static IpcRenderer ipcRenderer;
+    public static Screen screen;
 }
 

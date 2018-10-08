@@ -4,6 +4,8 @@ public abstract class AllElectron extends def.js.Object {
     @jsweet.lang.Optional
     public App app;
     @jsweet.lang.Optional
+    public Screen screen;
+    @jsweet.lang.Optional
     public BrowserWindow BrowserWindow;
     @jsweet.lang.Optional
     public WebPreferences WebPreferences;
